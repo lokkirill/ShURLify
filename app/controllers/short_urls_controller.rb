@@ -9,7 +9,7 @@ class ShortUrlsController < ApplicationController
   end
 
   def show
-    return redirect_to '/404.html' unless @url
+    return redirect_to '/404' unless @url
 
     redirect_to @url.target_url
   end
