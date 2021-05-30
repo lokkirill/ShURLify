@@ -1,0 +1,8 @@
+<%= stylesheet_link_tag 'application', media: 'all' %>
+
+<div class="main-container">
+  <%= render partial: "form", locals: local_assigns %>
+  <% if local_assigns[:shorted] %>
+    <%= render partial: "shorted", locals: { shorted: shorted } %>
+  <% end %>
+</div>

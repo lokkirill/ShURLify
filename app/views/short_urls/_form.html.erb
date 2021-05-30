@@ -1,0 +1,10 @@
+<% if local_assigns[:errors] %>
+  <% errors.each do |error| %>
+    <div class="error"><%= error%></div>
+  <% end %>
+<% end %>
+
+<%= form_with url: "/", method: :post, class: 'shortlify-form' do |form| %>
+  <%= form.text_field :target_url %>
+  <%= form.submit "Short it" %>
+<% end %>

@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :short_urls, path: '/', only: %i[index show create]
+  root to: 'short_urls#index'
+
+  match '*path' => redirect('/'), via: :get
 end

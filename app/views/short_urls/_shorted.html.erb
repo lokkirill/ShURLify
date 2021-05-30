@@ -1,0 +1,14 @@
+<script>
+  const copyToClipboard = async () => {
+    const url = document.querySelector("#shorted-url-value").textContent
+    await navigator.clipboard.writeText(url)
+    const btn = document.querySelector("#copy-button")
+    btn.textContent = 'Copied!'
+  }
+</script>
+
+<div class="shorted-url">
+  <p id="shorted-url-value"><%= short_url_url(shorted.key) %></p>
+</div>
+
+<button id="copy-button" onclick="copyToClipboard()">Copy link</button>
