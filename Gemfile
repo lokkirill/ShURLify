@@ -16,6 +16,8 @@ gem 'sass-rails', '>= 6'
 gem 'sprockets', '>= 3.0.0'
 gem 'sprockets-es6'
 
+gem "validate_url"
+
 group :development, :test do
   gem 'pry'
   gem 'pry-rails'

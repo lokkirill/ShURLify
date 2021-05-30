@@ -5,7 +5,10 @@ require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 
 require 'rspec/rails'
-require 'capybara/rails'
+require 'validate_url/rspec_matcher'
+require 'simplecov'
+
+SimpleCov.start
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|

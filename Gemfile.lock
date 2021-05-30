@@ -115,6 +115,7 @@ GEM
       method_source (~> 1.0)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
+    public_suffix (4.0.6)
     puma (5.3.2)
       nio4r (~> 2.0)
     racc (1.5.2)
@@ -206,6 +207,9 @@ GEM
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    validate_url (1.0.13)
+      activemodel (>= 3.0.0)
+      public_suffix
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -245,6 +249,7 @@ DEPENDENCIES
   sprockets (>= 3.0.0)
   sprockets-es6
   tzinfo-data
+  validate_url
   web-console (>= 4.1.0)
   webpacker (~> 5.0)
 
